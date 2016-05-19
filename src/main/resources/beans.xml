@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans">
+    <bean id="javaBean" class="com.yaoyaohao.study.spring.JavaBean">
+        <property name="username" value="tomcat"/>
+        <property name="password" value="123"/>
+    </bean>
+</beans>

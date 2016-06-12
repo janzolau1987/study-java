@@ -1,7 +1,6 @@
 package com.yaoyaohao.study.nio.select;
 
 import java.net.InetSocketAddress;
-import java.net.ServerSocket;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
@@ -25,8 +24,7 @@ public class SelectSockets {
 		System.out.println("Listening on port " + port);
 		//
 		ServerSocketChannel serverChannel = ServerSocketChannel.open();
-		ServerSocket serverSocket = serverChannel.socket();
-		serverSocket.bind(new InetSocketAddress(port));
+		serverChannel.socket().bind(new InetSocketAddress(port));
 		serverChannel.configureBlocking(false);
 		
 		Selector selector = Selector.open();
@@ -44,6 +42,7 @@ public class SelectSockets {
 					SocketChannel channel = server.accept();
 					//
 					registerChannel(selector, channel, SelectionKey.OP_READ);
+					sayHello(channel);
 				}
 				
 				//Is there data to read on this channel ? 

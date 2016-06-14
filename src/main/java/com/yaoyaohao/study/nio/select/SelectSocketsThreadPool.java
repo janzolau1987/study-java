@@ -92,7 +92,7 @@ public class SelectSocketsThreadPool extends SelectSockets {
 		}
 		
 		@Override
-		public void run() {
+		public synchronized void run() {
 			System.out.println(this.getName() + " is ready");
 			while(true) {
 				try{

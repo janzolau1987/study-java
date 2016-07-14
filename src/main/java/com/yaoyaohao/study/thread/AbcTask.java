@@ -30,9 +30,12 @@ public class AbcTask implements Runnable {
 						System.out.print(this.name);
 					cur.notify();
 				}
-				try {
-					pre.wait();
-				} catch (Exception e) {/* ignore */}
+				//增加判断，避免10次ABC执行完后，主流程还是不能线束
+				if(i != 9) {
+					try {
+						pre.wait();
+					} catch (Exception e) {/* ignore */}
+				}
 			}
 		}
 	}

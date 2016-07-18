@@ -5,6 +5,8 @@ package com.yaoyaohao.study.thread;
  * 
  * daemon属性需要在启动线程之前设置，不能在启动线程之后设置
  * 
+ * 注意：在构建Daemon线程时，不能依靠finally块中的内容来确保执行关闭或清理资源的逻辑
+ * 
  * @author liujianzhu
  * @date 2016年7月18日 下午9:35:33
  *

@@ -4,9 +4,9 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * 原子更新引用类型
- * 	AtomicReference
- * 	AtomicReferenceFieldUpdater
- * 	AtomicMarkableReference
+ * 	AtomicReference				原子更新引用类型
+ * 	AtomicReferenceFieldUpdater	原子更新引用类型里的字段
+ * 	AtomicMarkableReference		原子更新带有标记位的引用类型
  * 
  * @author liujianzhu
  * @date 2016年8月3日 上午10:53:02

@@ -4,9 +4,9 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
  * 原子更新数组
- * 	AtomicIntegerArray
- *  AtomicLongArray
- *  AtomicReferenceArray
+ * 	AtomicIntegerArray		原子更新整型数组里的元素
+ *  AtomicLongArray			原子更新长整型数组里的元素
+ *  AtomicReferenceArray	原子更新引用类型数组里的元素
  * 
  * @author liujianzhu
  * @date 2016年8月3日 上午10:45:33

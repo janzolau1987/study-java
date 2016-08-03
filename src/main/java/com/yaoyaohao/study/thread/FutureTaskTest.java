@@ -25,6 +25,7 @@ public class FutureTaskTest {
 				Callable<String> task = new Callable<String>() {
 					@Override
 					public String call() throws Exception {
+						System.out.println(Thread.currentThread().getName() + " 正在执行FutureTask.");
 						return taskName;
 					}
 				};

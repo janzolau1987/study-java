@@ -15,7 +15,6 @@ import java.util.ServiceLoader;
 public class SPIDemo {
 	public static void main(String[] args) {
 		ServiceLoader<IHello> loaders = ServiceLoader.load(IHello.class);
-		//
 		for(IHello h : loaders) {
 			h.sayHello();
 		}

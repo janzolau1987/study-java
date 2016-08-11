@@ -1,2 +1,2 @@
-# study-nio
-Java NIO学习
+# study-java
+Java 学习 (之前study-nio项目改名为study-java)

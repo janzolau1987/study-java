@@ -23,6 +23,7 @@ public class HelloServer {
 			//把远程对象注册到RMI注册服务器上，并命名为RHello
 			//绑定URL标准格式为: rmi://host:port/name （其中协议名可以省略）
 			Naming.bind("rmi://localhost:8888/RHello", rhello);
+			//Naming.bind("localhost:8888/RHello", rhello);
 			
 			System.out.println(">>>> INFO : 远程IHello对象绑定成功.");
 		} catch (RemoteException e) {

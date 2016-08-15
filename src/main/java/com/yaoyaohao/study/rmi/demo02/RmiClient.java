@@ -3,6 +3,12 @@ package com.yaoyaohao.study.rmi.demo02;
 import java.rmi.Naming;
 import java.util.List;
 
+/**
+ * 客户端远程调用
+ * 
+ * @author liujianzhu
+ * @date 2016年8月15日 下午5:10:29
+ */
 public class RmiClient {
 
 	public static void main(String[] args) {

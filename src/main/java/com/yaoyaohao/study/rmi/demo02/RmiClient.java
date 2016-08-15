@@ -4,7 +4,7 @@ import java.rmi.Naming;
 import java.util.List;
 
 /**
- * 客户端远程调用
+ * 客户端远程调用-test
  * 
  * @author liujianzhu
  * @date 2016年8月15日 下午5:10:29

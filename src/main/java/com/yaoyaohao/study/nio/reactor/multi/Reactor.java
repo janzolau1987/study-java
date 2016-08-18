@@ -30,12 +30,24 @@ public class Reactor implements Runnable{
 				selector.select();
 				Iterator<SelectionKey> it = selector.selectedKeys().iterator();
 				while (it.hasNext()) {
-					dispatch(it.next());
+					SelectionKey key = it.next();
+					if(key.isValid()) {
+						try{
+							dispatch(it.next());
+						}catch(Exception e) {
+							if(key != null){
+								key.cancel();
+								key.channel().close();
+							}
+						}
+					}
 					it.remove();
 				}
 			}
 		} catch (IOException ex) {
 			ex.printStackTrace();
+			//
+			close();
 		}
 	}
 
@@ -43,5 +55,15 @@ public class Reactor implements Runnable{
 		Runnable r = (Runnable) (k.attachment());
 		if (r != null)
 			r.run();
+	}
+	
+	public void close() {
+		if(selector != null) {
+			try {
+				selector.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 }

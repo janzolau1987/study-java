@@ -33,6 +33,8 @@ public class SingleReactorClient {
 			else { //连接失败
 				System.out.println("连接失败.");
 			}
+			//
+			sc.close();
 		} catch(IOException ex){}
 	}
 }

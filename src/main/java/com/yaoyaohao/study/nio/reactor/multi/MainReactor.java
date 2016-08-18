@@ -50,6 +50,11 @@ public class MainReactor extends Reactor {
 					next = 0;
 			} catch (IOException ex) {
 				ex.printStackTrace();
+				//
+				if(serverSocket != null)
+					try {
+						serverSocket.close();
+					} catch (IOException e) {/**IGNORE*/}
 			}
 		}
 	}

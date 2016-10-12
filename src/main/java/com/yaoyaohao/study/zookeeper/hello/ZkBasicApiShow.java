@@ -13,6 +13,7 @@ import org.apache.zookeeper.ZooDefs.Ids;
 
 /**
  * ZooKeeper API基本的操作示例
+ * PS:重点注意watch用法exists/getData/getChildren
  * 
  * @author liujianzhu
  * @date 2016年10月11日 下午5:03:11

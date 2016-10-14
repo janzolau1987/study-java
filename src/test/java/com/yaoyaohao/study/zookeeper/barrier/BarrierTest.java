@@ -1,5 +1,7 @@
 package com.yaoyaohao.study.zookeeper.barrier;
 
+import com.yaoyaohao.study.zookeeper.usecase.barrier.DistributedBarrier;
+
 /**
  * 分布式barrier测试用例
  * 

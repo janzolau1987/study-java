@@ -1,5 +1,8 @@
 package com.yaoyaohao.study.zookeeper.lock;
 
+import com.yaoyaohao.study.zookeeper.usecase.lock.DistributedLock;
+import com.yaoyaohao.study.zookeeper.usecase.lock.SimpleDistributeLock;
+
 public class DistributeLockTest {
 	private final static String BARRIER_HOST = "172.16.10.1:2181";
 
@@ -13,7 +16,7 @@ public class DistributeLockTest {
 				@Override
 				public void run() {
 					try {
-						lock.acquire();
+						lock.acquire();	
 						Thread.sleep(1000); // 获得锁之后可以进行相应的处理
 						System.out.println("======获得锁后进行相应的操作======");
 						lock.release();

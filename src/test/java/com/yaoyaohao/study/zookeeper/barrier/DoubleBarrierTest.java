@@ -1,5 +1,7 @@
 package com.yaoyaohao.study.zookeeper.barrier;
 
+import com.yaoyaohao.study.zookeeper.usecase.barrier.DoubleDistributedBarrier;
+
 /**
  * 分布式barrier测试用例
  * 
@@ -14,7 +16,7 @@ public class DoubleBarrierTest {
 		//
 		Runnable r = new Runnable() {
 			@Override
-			public void run() {
+			public void run() {	
 				try {
 					//enter
 					barrier.enterAwait();

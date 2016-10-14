@@ -1,5 +1,7 @@
 package com.yaoyaohao.study.zookeeper.queue;
 
+import com.yaoyaohao.study.zookeeper.usecase.queue.DistributedQueue;
+
 public class QueueTest {
 	private final static String BARRIER_HOST = "172.16.10.1:2181";
 

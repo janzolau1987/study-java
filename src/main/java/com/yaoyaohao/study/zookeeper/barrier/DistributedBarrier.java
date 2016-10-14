@@ -87,8 +87,10 @@ public class DistributedBarrier implements Watcher {
 			latch.countDown();
 			return;
 		}
-		synchronized (mutex) {
-			mutex.notifyAll();
+		else if(event.getType() == EventType.NodeChildrenChanged) {
+			synchronized (mutex) {
+				mutex.notifyAll();
+			}
 		}
 	}
 

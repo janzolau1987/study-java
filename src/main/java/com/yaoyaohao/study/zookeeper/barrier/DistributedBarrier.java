@@ -85,7 +85,7 @@ public class DistributedBarrier implements Watcher {
 		// 如果zk连接成功
 		if (event.getType() == EventType.None && event.getState() == KeeperState.SyncConnected) {
 			latch.countDown();
-			return;
+			//return;
 		}
 		else if(event.getType() == EventType.NodeChildrenChanged) {
 			synchronized (mutex) {

@@ -1,0 +1,7 @@
+简单的基于spring读写分离实现
+##rw-AbstractRoutingDataSource
+基于Spring AbstractRoutingDataSource与AOP技术实现数据源读写分离
+配置文件参照：applicationContext-ard-demo.xml
+##rw-BeanPostProcessor
+为了性能优化，原生的Spring配置事务时会对只读方法加readyOnly=true。故本工程实现读写分离的思路就是，通过BeanPostProcessor在spring类初始化完成 后，找到增加的事务属性，提取出哪些方法需要只读。然后配合Spring AOP在拦截方法执行之前判断方法是否属于只读，如果是则切换到读库，反之走写库。
+配置文件参照：applicationContext-bpp-demo.xml

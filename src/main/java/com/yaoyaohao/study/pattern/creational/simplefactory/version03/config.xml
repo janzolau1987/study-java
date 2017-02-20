@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<item>
+		<type>histogram</type>
+		<className>com.yaoyaohao.study.pattern.creational.simplefactory.version02.HistogramChart</className>
+	</item>
+	<item>
+		<type>pie</type>
+		<className>com.yaoyaohao.study.pattern.creational.simplefactory.version02.PieChart</className>
+	</item>
+	<item>
+		<type>line</type>
+		<className>com.yaoyaohao.study.pattern.creational.simplefactory.version02.LineChart</className>
+	</item>
+</items>

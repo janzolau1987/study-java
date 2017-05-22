@@ -1,0 +1,2 @@
+* Rule 1: should operate an a Person instance, check that the person age is greater than 18 and set the adult flag.
+* Rule 2: should operate an a Person instance, check that the person is adult and deny children (ie, non adult) from buying alcohol.

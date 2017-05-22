@@ -26,9 +26,11 @@
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis-spring.version>1.2.3</mybatis-spring.version>
 		<mybatis-paginator.version>1.2.17</mybatis-paginator.version>
-		
+
 		<mp.version>2.0.7</mp.version>
 		<velocity.version>1.7</velocity.version>
+		
+		<easyrules.version>2.5.0</easyrules.version>
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
@@ -141,15 +143,15 @@
 
 		<!-- 模板引擎 -->
 		<dependency>
-		    <groupId>org.apache.velocity</groupId>
-		    <artifactId>velocity</artifactId>
-		    <version>${velocity.version}</version>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>${velocity.version}</version>
 		</dependency>
 		<!-- mybatis -->
 		<dependency>
-		    <groupId>com.baomidou</groupId>
-		    <artifactId>mybatis-plus</artifactId>
-		    <version>${mp.version}</version>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus</artifactId>
+			<version>${mp.version}</version>
 		</dependency>
 
 		<!-- Test -->
@@ -206,6 +208,12 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.4.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.easyrules</groupId>
+			<artifactId>easyrules-core</artifactId>
+			<version>${easyrules.version}</version>
 		</dependency>
 	</dependencies>
 </project>

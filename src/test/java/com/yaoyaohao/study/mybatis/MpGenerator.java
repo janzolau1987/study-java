@@ -45,11 +45,11 @@ public class MpGenerator {
 		gc.setAuthor("liujianzhu");
 		
 		//自定义文件命名，注意%s会自动填充表实体属性
-//		gc.setMapperName("%sDao");
-//		gc.setXmlName("%sDao");
-//		gc.setServiceName("%sService");
-//		gc.setServiceImplName("%sServiceImpl");
-//		gc.setControllerName("%sController");
+		gc.setMapperName("%sDao");
+		gc.setXmlName("%sDao");
+		gc.setServiceName("%sService");
+		gc.setServiceImplName("%sServiceImpl");
+		gc.setControllerName("%sController");
 		mpg.setGlobalConfig(gc);
 		
 		//数据源配置

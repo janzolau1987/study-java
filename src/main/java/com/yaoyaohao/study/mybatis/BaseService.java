@@ -19,9 +19,9 @@ public class BaseService {
 	
 	static {
 		//基于XML格式配置
-		//initSqlSessionFactoryFromXML();
+		initSqlSessionFactoryFromXML();
 		//java代码方式创建
-		initSqlSessionFactoryFromCode();
+		//initSqlSessionFactoryFromCode();
 	}
 	
 	private static void initSqlSessionFactoryFromXML() {

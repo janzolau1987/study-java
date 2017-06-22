@@ -8,3 +8,7 @@ Java 学习 (之前study-nio项目改名为study-java)
 * 多线程
 * ZooKeeper
 * 设计模式
+* EasyRules规则引擎
+* ZXing二维码处理
+* MyBatis
+* Xml解析

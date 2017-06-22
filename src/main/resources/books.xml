@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book id="001">
+		<title>Harry Potter</title>
+		<author>J K. Rowling</author>
+		<year>2001</year>
+		<price>199</price>
+	</book>
+	<book id="002">
+		<title>Learning XML</title>
+		<author>Erik T. Ray</author>
+		<year>2005</year>
+		<price>69</price>
+	</book>
+	<book id="003">
+		<title>Spring in Action</title>
+		<author>J. Doung</author>
+		<year>2011</year>
+		<price>89</price>
+	</book>
+	<book id="004">
+		<name>冰与火之歌</name>
+		<author>乔治马丁</author>
+		<year>2014</year>
+		<price>89</price>
+	</book>
+</books>

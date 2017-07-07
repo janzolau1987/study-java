@@ -16,6 +16,8 @@ import java.util.Map.Entry;
  *  允许null键/值
  *  非同步
  *  不保证有序，也不保证顺序不随时间变化
+ *  
+ *  利用哈希表的快速插入、查找实现O(1)的增删改查
  * 
  * @author liujianzhu
  * @date 2017年7月6日 下午3:16:45

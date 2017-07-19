@@ -19,9 +19,9 @@ public class BaseService {
 	
 	static {
 		//基于XML格式配置
-		initSqlSessionFactoryFromXML();
+		//initSqlSessionFactoryFromXML();
 		//java代码方式创建
-		//initSqlSessionFactoryFromCode();
+		initSqlSessionFactoryFromCode();
 	}
 	
 	private static void initSqlSessionFactoryFromXML() {
@@ -50,6 +50,8 @@ public class BaseService {
 		configuration.getTypeAliasRegistry().registerAlias("Student", Student.class);
 		//加入映射器
 		configuration.addMapper(StudentMapper.class);
+		//加入自定义插件
+		configuration.addInterceptor(new MyPlugin());
 		
 		sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
 	}

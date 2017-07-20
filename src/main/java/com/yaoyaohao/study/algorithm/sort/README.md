@@ -30,3 +30,6 @@ Out-place: 占用额外内存
 
 * 希尔排序   ShellSort :  
 ![希尔排序](../pics/shell_sort.png)
+
+* 归并排序   MergeSort :
+![归并排序](../pics/merge_sort.gif)

@@ -19,8 +19,11 @@ Out-place: 占用额外内存
 
 ## 3. 部分算法动画演示
 数据样本: [3,44,38,5,47,15,36,26,27,2,46,4,19,50,48]  
-* 冒泡排序  
+* 冒泡排序   BubbleSort :
 ![冒泡排序](../pics/bubble_sort.gif)  
 
-* 选择排序  
+* 选择排序   SelectionSort :
 ![选择排序](../pics/selection_sort.gif)
+
+* 插入排序   InsertionSort :
+![插入排序](../pics/insertion_sort.gif)

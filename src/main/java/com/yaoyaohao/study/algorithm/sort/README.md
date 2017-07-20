@@ -29,4 +29,4 @@ Out-place: 占用额外内存
 ![插入排序](../pics/insertion_sort.gif)
 
 * 希尔排序   ShellSort :
-![希尔排序](../pics/shell_sort.gif)
+![希尔排序](../pics/shell_sort.png)

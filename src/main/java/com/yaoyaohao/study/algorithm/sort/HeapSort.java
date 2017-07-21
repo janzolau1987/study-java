@@ -44,8 +44,8 @@ public class HeapSort {
 	 * @param len	堆大小
 	 */
 	private static <T extends Object & Comparable<T>> void heapify(T[] arr, int x, int len) {
-		int l = 2 * x + 1,	//左子节点下标
-			r = 2 * x + 2,	//右子节点下标
+		int l = (x << 1) + 1,	//左子节点下标 = x * 2 + 1
+			r = (x << 1) + 2,	//右子节点下标 = x * 2 + 2
 			largest = x;
 		T temp;
 		if(l < len && arr[l].compareTo(arr[largest]) > 0) {

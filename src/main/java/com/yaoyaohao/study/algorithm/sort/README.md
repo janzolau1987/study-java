@@ -45,6 +45,9 @@ Out-place: 占用额外内存
 数据样本: [91, 60, 96, 13, 35, 65, 46, 65, 10, 30, 20, 31, 77, 81, 22]  
 ![堆排序](../pics/heap_sort.gif)
 
-* 计数排序  CountingSort :
+* 计数排序  CountingSort :  
 数据样本：[2, 2, 3, 8, 7, 1, 2, 2, 2, 7, 3, 9, 8, 2, 1, 4, 2, 4, 6, 9, 2]  
 ![计数排序](../pics/counting_sort.gif)
+
+* 桶排序   BucketSort :  
+![桶排序](../pics/bucket_sort.png)
